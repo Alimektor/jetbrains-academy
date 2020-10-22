@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+    {% for link, value in links %}
+    <a href="get_ticket/{{ link }}">{{ value }}</a>
+    {% endfor %}
+</body>
+</html>
