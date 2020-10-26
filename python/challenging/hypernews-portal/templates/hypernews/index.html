@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News Main Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+<h2>Hyper news</h2>
+
+<form method="GET">
+{% csrf_token %}
+{{ form }}
+<input type="submit" value="Send" >
+</form>
+
+{% for group_title, group_list in news_group %}
+<h4>{{ group_title }}</h4>
+<ul>
+    {% for title, link in group_list %}
+    <li><a href="/news/{{ link }}/">{{ title }}</a></li>
+    {% endfor %}
+</ul>
+{% endfor %}
+<a href="/news/create/">Create</a>
+</body>
+</html>

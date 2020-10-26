@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new news</title>
+        {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+<form method="POST" action="news/">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Send" >
+</form>
+<a href="/news/">Go to News</a>
+</body>
+</html>
