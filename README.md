@@ -2,14 +2,13 @@
 
 This is a repository for [JetBrains Academy](https://www.jetbrains.com/academy/) Projects (Python and Java Track).
 
-## Java Track ##
+## My Course ##
 
-### Easy Java ###
+- Python: 183 / 303 (60%)
+- Java: 190 / 395 (48%)
+- Frontend: 108 / 109 (99%)
+- Kotlin: 47 / 175 (27%)
 
-- Tic-Tac-Toe
+### Python Track ###
 
-## Python Track ##
-
-### Easy Python ##
-
-- Tic-Tac-Toe
+- [Simple Chatty Bot](python/easy/simple-chatty-bot)
